@@ -13,6 +13,7 @@ Cloudera QuickStart VM уже давно не поддерживается. Эт
 Примеры Hadoop MapReduce, для запуска их на python через Hadoop Streaming нужен реальный кластер, который поднимается в Docker 
 - [Развертывание кластера Hadoop](docker) : datanode - 3 шт, namenode, history-server, resourcemanager, nodemanager.
 - [Подсчет слов](map-reduce/words-count)
+- [Поиск максимальной стоимости акций по секторам](map-reduce/stocks-max). Dataset https://www.kaggle.com/datasets/dinnymathew/usstockprices
 
 Примеры c Apache Spark:
 - [Подсчет количества слов с помощью RDD](spark/wordcount-rdd.py)
