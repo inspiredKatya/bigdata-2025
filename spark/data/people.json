@@ -1,0 +1,12 @@
+[{
+    "name": "John",
+    "age": 27
+},
+{
+    "name": "Alex",
+    "age": 32
+},
+{
+    "name": "Anna",
+    "age": null
+}]

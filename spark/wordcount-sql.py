@@ -5,12 +5,12 @@ from pyspark.sql import SparkSession
 
 spark = SparkSession.builder\
         .master("local[*]")\
-        .appName('PySpark_Tutorial')\
+        .appName('PySpark_Example')\
         .getOrCreate()
 
 from pyspark.sql import functions as f
 
-data = spark.read.text("input-words.txt")
+data = spark.read.text("data\input-words.txt")
 
 df = data.withColumn('word', f.explode(f.split(f.col('value'), ' ')))
 df.createOrReplaceTempView("words")

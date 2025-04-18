@@ -8,10 +8,10 @@ os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 spark = SparkSession.builder\
         .master("local[*]")\
-        .appName('PySpark_Tutorial')\
+        .appName('PySpark_Example')\
         .getOrCreate()
 
-lines = spark.read.text("input-words.txt").rdd.map(lambda r: r[0])
+lines = spark.read.text("data\input-words.txt").rdd.map(lambda r: r[0])
 counts = lines.flatMap(lambda x: x.split(' ')) \
         .map(lambda x: (x, 1)) \
         .reduceByKey(add)\

@@ -17,7 +17,9 @@ Cloudera QuickStart VM уже давно не поддерживается. Эт
 Примеры c Apache Spark:
 - [Подсчет количества слов с помощью RDD](spark/wordcount-rdd.py)
 - [Подсчет количества слов SparkSQL](spark/wordcount-sql.py) - пример как делать не надо
-- будут еще
+- [Работа с простым json файлом](/spark/dataset-json.py) 
+- Исследование данных о лесных пожарах 2012-2021, данные https://data.rcsi.science/data-catalog/datasets/202/
+  в Git для примера помещен "малый" набор данных, полный можно скачать и подложить для рассчетов
 
 
 
