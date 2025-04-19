@@ -28,6 +28,7 @@ data = spark.read.format("csv") \
     .option("dateFormat", "yyyy-M-d")\
     .schema(fireFileschema)\
     .load("data\\csv\\sample_202.csv")
+#   .load("data\\csv\\thermopoints.csv")
 
 data.createOrReplaceTempView("fires")
 

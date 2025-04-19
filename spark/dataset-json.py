@@ -10,7 +10,7 @@ spark = SparkSession.builder\
 
 from pyspark.sql.functions import col
 
-dataFrame = spark.read.json("people.json", multiLine=True)
+dataFrame = spark.read.json("data\\people.json", multiLine=True)
 
 # null are filtered out
 dataFrame.filter(col('age')>30).show()
